@@ -6,13 +6,13 @@ defmodule Aoc01Test do
     @examples [
       {12, 2},
       {14, 2},
-      {1969, 654},
-      {100_756, 33583}
+      {1969, 966},
+      {100_756, 50346}
     ]
 
     test "should return fuel for mass" do
       for {mass, expected_fuel} <- @examples do
-        assert expected_fuel == Aoc01.fuel_required(mass)
+        assert expected_fuel == Aoc01.fuel_required(mass), "Input: #{mass}"
       end
     end
   end
